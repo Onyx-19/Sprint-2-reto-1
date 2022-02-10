@@ -1,0 +1,105 @@
+:root{
+    --primaryColor: rgb(22, 0, 83);
+    --secundaryColor: rgb(5, 1, 32);
+}
+body{
+    margin: 0;
+    background-color: var(--secundaryColor);
+    font-family: cursive;
+    color: white;
+}
+header{
+    margin: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 2.5rem;
+    margin: 0 0 0 0.5rem;
+    width: 2.5rem;
+    border-radius: 100rem;
+}
+.title{
+    margin: 0 52rem 0 1rem;
+}
+.menu{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+.slider{
+    border-radius: 15px;
+    margin: 0.5rem;
+    background-color: aqua;
+    height: 16rem;
+}
+h3{
+    margin: 0.5rem 0 0.5rem 1rem; 
+}
+img{
+    display: flex;
+    margin: 0;
+    width: 11rem;
+}
+h5{
+    margin: 0 0.5rem 0 0.6rem;
+    text-align: center;
+}
+.list{
+    border-radius: 15px;
+    background-color: var(--primaryColor);
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    height: 17.5rem;
+    max-width: 10.5rem;
+}
+.movies{
+    height: 14rem;
+    margin: 0.5rem 0 0 0.5rem;
+}
+.form{
+    background-color: gray;
+    margin: 5rem 0 0 28rem;
+    width: 28rem;
+    height: auto;
+    border-radius: 15px;
+}
+.h2form{
+    text-align: center;
+}
+label{
+    margin: 0 0 0 4rem;
+}
+input{
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 14rem;
+    height: 1.5rem;
+    font-family: cursive;
+    font-size: medium;
+}
+textarea{
+    font-family: cursive;
+    border-radius: 10px;
+    height: 25px;
+    min-block-size: 20px;
+    max-block-size: 200px;
+    max-inline-size: 325px;
+    min-inline-size: 325px;
+}
+.enviar{
+    font-size: medium;
+    border-radius: 10px;
+    height: 2rem;
+    width: 7rem;
+    margin: 0 0 0.5rem 10rem;
+}

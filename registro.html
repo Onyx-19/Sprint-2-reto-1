@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo">
+        <h1 class="title"> Peliculas para ti</h1>
+        <a class="menu" href="index.html">Inicio</a>
+        <a class="menu" href="registro.html">Registro</a>
+    </header>
+    <main>
+        <form id="form" class="form">
+            <h2 class="h2form">Formulario de registro</h2>
+            <label>Nombre:
+                <input id="nombre" style="margin-left: 30px;" type="text" required>
+            </label>
+            <label>Apellido:
+                <input id="apellido" style="margin-left: 29px;" type="text" required>
+            </label>
+            <label>Telefono:
+                <input id="telefono" style="margin-left: 23px;" type="number" required>
+            </label>
+            <label>Direccion:
+                <input id="direccion" style="margin-left: 19px;" type="text" required>
+            </label>
+            <label style="margin-right: 100px;">Observaciones:</label>
+            <textarea id="observaciones" style="margin-left: 4rem;"></textarea>
+            
+            <button class="enviar" type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <script src="scripts/registro.js"></script>
+</body>
+</html>
+
