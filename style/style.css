@@ -1,0 +1,76 @@
+:root{
+    --primary-color: rgb(160, 2, 2);
+    --secondary-color: rgb(48, 47, 47);
+}
+body{
+    background-color: var(--primary-color);
+    color: white;
+    font-family: roboto;
+}
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 82rem;
+}
+.img{
+    margin: 1rem 5rem 1rem 5rem;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 8.5rem;
+}
+main{
+    background-color: var(--secondary-color);
+    width: 80rem;
+    border-radius: 1rem;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+}
+form{
+    margin: 0 0 0 14rem;
+    border-radius: 2rem;
+    background-color: silver;
+    width: 55rem;
+}
+input{
+    border: solid 1.5px black;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 20rem;
+    margin: 1rem 15rem 1rem 15.5rem;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 105%;
+}
+select{
+    border: solid 1.5px black;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 15rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+}
+button{
+    background-color: rgb(97, 143, 29);
+    font-size: medium;
+    color: white;
+    border: solid 1.5px black;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 15rem;
+    margin: 1.5rem 1rem 0 1rem;
+}
+footer{
+    text-align: center;
+}
+#contenedor{
+    color: black;
+    background-color: white;
+    margin: 1rem 5rem 10rem 5rem;
+    border-radius: 10px;
+    max-height: 100px;
+    text-align: center;
+}

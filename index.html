@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    <header>
+        <img class="img" src="img/logo.png">
+        <h1>Valores y servicios S.A.</h1>
+    </header>
+    <main>
+        <form id="form">
+            <input id="valor" type="text" placeholder="Ingresa la cantidad de dinero a convertir" required>
+            <select id="moneda1">
+                <option selected value="USD" >Dolar estadounidense</option>
+                <option value="GBP">Libra esterlina</option>
+                <option value="COP">Peso colombiano</option>
+                <option value="MXN">Peso mexicano</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <select id="moneda2">
+                <option value="USD">Dolar estadounidense</option>
+                <option selected value="GBP">Libra esterlina</option>
+                <option value="COP" >Peso colombiano</option>
+                <option value="MXN">Peso mexicano</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button type="submit">Convertir</button>
+            <p id="contenedor"></p>
+        </form>    
+    </main>
+    <footer>
+        <p>Copyright © 2022 Valores y servicios S.A. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
