@@ -51,7 +51,10 @@ FORM.addEventListener("submit", (e) =>{
             result = (valor * valorMoneda1) * valorMoneda2
         }else if (moneda2 === "EUR"){
             result = (valor * valorMoneda1) * valorMoneda2
+        }else if(moneda2 === moneda1){
+            result = valor;
         }
+
     }
     else if(moneda1 === "COP"){
         if(moneda2 === "USD"){
@@ -62,6 +65,8 @@ FORM.addEventListener("submit", (e) =>{
             result = (valor * COP) * valorMoneda2
         }else if (moneda2 === "EUR"){
             result = (valor * COP) * valorMoneda2
+        }else if(moneda2 === moneda1){
+            result = valor;
         }
     }
     else if(moneda1 === "GBP"){
@@ -73,6 +78,8 @@ FORM.addEventListener("submit", (e) =>{
             result = (valor * GBP) * valorMoneda2
         }else if (moneda2 === "EUR"){
             result = (valor * GBP) * valorMoneda2
+        }else if(moneda2 === moneda1){
+            result = valor;
         }
     }
     else if(moneda1 === "MXN"){
@@ -84,6 +91,8 @@ FORM.addEventListener("submit", (e) =>{
             result = (valor * MXN) * valorMoneda2
         }else if (moneda2 === "EUR"){
             result = (valor * MXN) * valorMoneda2
+        }else if(moneda2 === moneda1){
+            result = valor;
         }
     }
     else if(moneda1 === "EUR"){
@@ -95,6 +104,8 @@ FORM.addEventListener("submit", (e) =>{
             result = (valor * EUR) * valorMoneda2
         }else if (moneda2 === "MXN"){
             result = (valor * EUR) * valorMoneda2
+        }else if(moneda2 === moneda1){
+            result = valor;
         }
     }else{
         
