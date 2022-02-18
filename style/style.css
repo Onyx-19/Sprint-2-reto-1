@@ -30,41 +30,78 @@ header{
     text-decoration: none;
     padding: 1rem;
 }
-.slider{
+.sliderImg{
     border-radius: 15px;
-    margin: 0.5rem;
-    background-color: aqua;
-    height: 16rem;
+    height: 500px;
+    width: 800px;
+}
+ul, li{
+    list-style:none;
+    margin: 0 7rem ;
+}
+.slideItem{
+    position:absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.slideItem:first-child{
+    opacity: 1;
+}
+.slideItem:target{
+    opacity: 1;
+}
+.left{
+    background-color: var(--primaryColor);
+    margin: 15rem 0 0 13rem ;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border-color: white;
+}
+.right{
+    background-color: var(--primaryColor);
+    margin: 15rem 0 0 51rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border-color: white;
+}
+.side{
+    color: white;
+    border-radius: 100%;
+    font-size: 200%;
+    font-weight: 900;
+}
+::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
 }
 h3{
-    margin: 0.5rem 0 0.5rem 1rem; 
-}
-img{
-    display: flex;
-    margin: 0;
-    width: 11rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 h5{
     margin: 0 0.5rem 0 0.6rem;
     text-align: center;
 }
-.list{
-    border-radius: 15px;
-    background-color: var(--primaryColor);
-    margin: 0.5rem;
+.contenedor{
+    padding: 1%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+    overflow-y: auto;
 }
-.container{
-    height: 17.5rem;
-    max-width: 10.5rem;
+.template{
+    background-color: aqua;
 }
-.movies{
-    height: 14rem;
-    margin: 0.5rem 0 0 0.5rem;
+.img{
+    height: 15rem;
+    display: flex;
+    margin: 8px;
+    width: 10.5rem;
+    border-radius: 5px;
+}
+.nameMovie{
+    text-align: center;
 }
 .form{
     background-color: gray;
@@ -102,4 +139,30 @@ textarea{
     height: 2rem;
     width: 7rem;
     margin: 0 0 0.5rem 10rem;
+}
+.list{
+    border: 0;
+    color: white;
+    background-color: transparent;
+}
+.detalleContainer{
+    background-color: var(--primaryColor);
+    margin: 2.5rem 20rem;
+    border: solid white;
+    border-radius: 15px;
+}
+.detalleNombre{
+    text-align: center;
+    margin: 0.5rem;
+}
+.detalleImg{
+    height: 30rem;
+    margin: 0 25%;
+    border-radius: 5px;
+}
+.detalleDescripcion{
+    margin: 0.5rem 3rem;
+}
+.detalleH3, .detalleDuracion{
+    margin-left: 1rem;
 }

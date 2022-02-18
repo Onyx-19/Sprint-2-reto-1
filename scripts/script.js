@@ -1,37 +1,18 @@
-let container = document.getElementById("nameMovie");
+import { data } from "./data.js";
 
-let array = [
-    {img: "./img/pelicula1.jpg", nombre: "Capitan america"},
-    {img: "./img/pelicula2.jpg", nombre: "Joker"},
-    {img: "./img/pelicula3.jpg", nombre: "Iron man"},
-    {img: "./img/pelicula4.jpg", nombre: "Thor"},
-    {img: "./img/pelicula5.jpg", nombre: "Spiderman"},
-    {img: "./img/pelicula6.jpg", nombre: "Shazam"},
-    {img: "./img/pelicula7.jpg", nombre: "Los vengadores"},
-    {img: "./img/pelicula8.jpg", nombre: "Venom"},
-    {img: "./img/pelicula9.jpg", nombre: "Batman"},
-]
+let contenedorbody = document.querySelector("#contenedor");
+let template = document.getElementById("template").content;
+let fragment = document.createDocumentFragment();
 
-array.forEach(element => {
+data.forEach(element => {
     
-    let images = document.createElement("img")
-    let total = document.createElement("h5");
-    images.src = element.img;
-    total.textContent = element.nombre;
-    document.body.appendChild(images);
-    document.body.appendChild(total);
-    
+    const {id, nombre, img} = element;
+
+    template.querySelector("#nameMovie").textContent = nombre;
+    template.querySelector("img").setAttribute("src", img);
+
+    const clone = template.cloneNode(true);
+    fragment.appendChild(clone);
 });
-
-
-//_________________________________________
-    // let total = document.createElement("h5");
-    
-    // total.textContent = name;
-    // // total.id = "result";
-    // fragment.appendChild(total);
-    // element.appendChild(fragment);
-    // console.log(name);
-    // console.log(picture);
-//      ___
+contenedorbody.appendChild(fragment);
 

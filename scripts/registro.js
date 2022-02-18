@@ -16,5 +16,6 @@ FORM.addEventListener("submit", (e) => {
     localStorage.setItem("Direccion:", direccion);
     localStorage.setItem("Observacion:", observaciones);
 
-    console.log(data);
+    alert ("Se han almacenado los datos correctamente")
 }) 
+
